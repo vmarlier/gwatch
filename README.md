@@ -1,5 +1,2 @@
-# go-Watch
-Linux watch equivalent in golang
-
-## Features
-[Here](https://linuxize.com/post/linux-watch-command/)
+# go-linux-commands
+Rewriting basic linux command in golang for fun
