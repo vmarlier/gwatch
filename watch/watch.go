@@ -32,12 +32,11 @@ func watch(args []string) {
 
 		fmt.Printf("\r%s", out.String())
 
-		// wait 5 seconds
+		// wait 2 seconds
 		time.Sleep(2 + time.Second)
 
-		// cleanup the terminal
-		fmt.Print("\033[H\033[2J")
 	}
+
 }
 
 func main() {
