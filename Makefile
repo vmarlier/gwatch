@@ -29,5 +29,5 @@ test: install lint
 	@richgo test -v ./...
 
 build:
-	@go build cmd/main.go -o ./dist/gwatch
+	@go build -o ./dist/gwatch
 	@cp ./dist/gwatch /usr/local/bin/gwatch

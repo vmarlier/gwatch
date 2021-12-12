@@ -23,7 +23,7 @@ func main() {
 	}
 
 	interval := int64(2)
-	if opts.Interval < 2 {
+	if opts.Interval > 2 {
 		interval = opts.Interval
 	}
 
