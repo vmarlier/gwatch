@@ -12,8 +12,8 @@ import (
 func GetCommandOutput(cmd string, args []string) (string, error) {
 	command := exec.Command(cmd, args...)
 
-	var out bytes.Buffer
-	command.Stdout = &out
+	var output bytes.Buffer
+	command.Stdout = &output
 
 	err := command.Run()
 	if err != nil {
@@ -21,7 +21,7 @@ func GetCommandOutput(cmd string, args []string) (string, error) {
 		log.Fatalln(err)
 	}
 
-	return out.String(), nil
+	return output.String(), nil
 }
 
 // ParseCommand will take a string to return a command with the args
