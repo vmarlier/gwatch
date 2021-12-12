@@ -36,3 +36,8 @@ Clone the repository then:
 ```sh
 $ make build
 ```
+
+## Incoming features ?
+[X] Multicommand support.
+[X] Change interval support.
+[ ] Exec commands asynchronously.
