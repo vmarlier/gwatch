@@ -2,30 +2,36 @@ package watch
 
 import (
 	"bytes"
-	"fmt"
-	"log"
 	"os/exec"
 	"strings"
 )
 
 // GetCommandOutput will take cmd (string) and args ([]string) and execute the command to return the output
-func GetCommandOutput(cmd string, args []string) (string, error) {
-	command := exec.Command(cmd, args...)
+func GetCommandOutputs(cmd []string, args [][]string, y int) (outputs []string, err error) {
+	for i := 0; i < y; i++ {
+		command := exec.Command(cmd[i], args[i]...)
 
-	var output bytes.Buffer
-	command.Stdout = &output
+		var output bytes.Buffer
+		command.Stdout = &output
 
-	err := command.Run()
-	if err != nil {
-		fmt.Println("command run error")
-		log.Fatalln(err)
+		err = command.Run()
+		if err != nil {
+			return []string{}, err
+		}
+
+		outputs = append(outputs, output.String())
 	}
 
-	return output.String(), nil
+	return outputs, nil
 }
 
 // ParseCommand will take a string to return a command with the args
-func ParseCommand(str []string) (string, []string) {
-	cmd := strings.Split(str[0], " ")
-	return cmd[0], cmd[1:]
+func ParseCommand(str []string, y int) (cmd []string, args [][]string) {
+	for i := 0; i < y; i++ {
+		pass := strings.Split(str[i], " ")
+		cmd = append(cmd, pass[0])
+		args = append(args, pass[1:])
+	}
+
+	return cmd, args
 }
