@@ -47,3 +47,4 @@ $ make build
 - :radio_button: Exec commands asynchronously.
 - :radio_button: Highlight differences with -d or --differences flag
 - :radio_button: Choose the layout when there is 2 or 3 commandes ?
+- 🔘 Handle command with a pipe -> "kubectl get pods | grep test"
