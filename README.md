@@ -10,9 +10,13 @@ Often I need to opens *2, 3 or 4 tabs* in my term/tmux to be able to monitor eve
 
 ## What does it look like ?
 
+#### 1 command
 ![Screenshot1](./assets/screenshot-1.png)
+#### 2 commands
 ![Screenshot2](./assets/screenshot-2.png)
+#### 3 commands
 ![Screenshot3](./assets/screenshot-3.png)
+#### 4 commands
 ![Screenshot4](./assets/screenshot-4.png)
 
 ## How to use it ?
@@ -42,3 +46,4 @@ $ make build
 - :ballot_box_with_check: Change interval support.
 - :radio_button: Exec commands asynchronously.
 - :radio_button: Highlight differences with -d or --differences flag
+- :radio_button: Choose the layout when there is 2 or 3 commandes ?
