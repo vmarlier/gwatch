@@ -41,3 +41,4 @@ $ make build
 - :ballot_box_with_check: Multicommand support.
 - :ballot_box_with_check: Change interval support.
 - :radio_button: Exec commands asynchronously.
+- :radio_button: Highlight differences with -d or --differences flag
