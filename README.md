@@ -1,12 +1,12 @@
 # gwatch (go-watch)
 Rewriting of the original `watch` linux command in order to add some new feature to it:
 - Better view.
-- Execute 2 or 3 commands simultaneously.
+- Execute **2, 3 or 4** commands simultaneously.
 
 ## Why ?
 
-I'm working on Kubernetes every single day. And my team and I are using a lot the `watch` tool to monitor of our last change was well applied by Flux for example.
-Often I need to opens *2, 3 or 4 tabs* in my term/tmux to be able to monitor everything. With this tool, we will be able to monitor 2 or 3 things at once.
+I'm working on Kubernetes every single day. And my team and I are using a lot the `watch` tool to monitor if our last change was well applied by Flux for example.
+I usually need to open 2, 3 in my term/tmux to be able to monitor everything. With this tool, we will be able to monitor 2 or 3 things at once.
 
 ## What does it look like ?
 
