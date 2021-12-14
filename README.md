@@ -42,9 +42,9 @@ $ make build
 ```
 
 ## Incoming features ?
-- :ballot_box_with_check: Multicommand support.
-- :ballot_box_with_check: Change interval support.
-- :radio_button: Exec commands asynchronously.
-- :radio_button: Highlight differences with -d or --differences flag
-- :radio_button: Choose the layout when there is 2 or 3 commandes ?
-- 🔘 Handle command with a pipe -> "kubectl get pods | grep test"
+- [X] Multicommand support.
+- [X] Change interval support.
+- [ ] Exec commands asynchronously.
+- [ ] Highlight differences with -d or --differences flag
+- [ ] Choose the layout when there is 2 or 3 commandes ?
+- [ ] Handle command with a pipe -> "kubectl get pods | grep test"
